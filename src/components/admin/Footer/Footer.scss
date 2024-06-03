@@ -1,0 +1,11 @@
+@import '../../../styles/variables.scss';
+
+.admin-footer {
+    width           : 100%;
+    background-color: $backgrounddark;
+    padding         : 14px;
+
+    &-content {
+        @include flex-spacebetween();
+    }
+}

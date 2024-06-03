@@ -1,0 +1,11 @@
+@import '../../../styles/variables';
+
+.form-select {
+    box-shadow  : none !important;
+    border-width: 2px;
+
+    &:focus {
+        border-color: $maincolor;
+    }
+
+}

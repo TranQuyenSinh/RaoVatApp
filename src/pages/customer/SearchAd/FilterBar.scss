@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+
+.filter-container {
+    height          : 50px;
+    background-color: $whitecolor;
+    @include flex-center();
+    gap: 12px;
+
+    .btn-filter {
+        border : 1px solid $graycolor;
+        padding: 4px 14px !important;
+        @include flex-spacebetween();
+        gap: 6px;
+    }
+}

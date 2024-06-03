@@ -1,0 +1,31 @@
+@import '../../../styles/variables';
+
+.genre-modal {
+    .modal-content {
+        height: 70%;
+    }
+
+    .modal-title {
+        width          : 100%;
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+
+    }
+
+    .modal-body {
+        padding: 0;
+
+        .genre-item {
+            @include flex-spacebetween();
+            padding      : 12px 14px;
+            border-bottom: 1px solid #ccc;
+            cursor       : pointer;
+            transition   : all .1s ease-in-out;
+
+            &:hover {
+                background-color: $backgroundcolor;
+            }
+        }
+    }
+}

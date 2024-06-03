@@ -1,0 +1,39 @@
+@import '../../../styles/variables';
+
+.customer-footer {
+    display         : flex;
+    flex-direction  : column;
+    gap             : 12px;
+    padding         : 30px 300px 0;
+    background-color: #fff;
+    margin-top      : 12px;
+
+    .title {
+        font-weight   : bold;
+        color         : $textcolor;
+        text-transform: uppercase;
+        margin-bottom : 4px;
+    }
+
+    .top {
+
+        ul {
+            font-size: 14px;
+
+
+
+            li {
+                color  : $mutedcolor;
+                padding: 4px 0;
+            }
+        }
+    }
+
+    .bottom {
+        div {
+            text-align: center;
+            font-size : 12px !important;
+            color     : $mutedcolor;
+        }
+    }
+}

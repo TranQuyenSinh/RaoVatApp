@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.square-arrow {
+    position       : absolute;
+    top            : 50%;
+    z-index        : 1;
+    transform      : translateY(-50%);
+    background     : #000;
+    opacity        : .3;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    outline        : none;
+    box-shadow     : none;
+    border         : none;
+    width          : 38px;
+    height         : 38px;
+    border-radius  : 3px;
+
+    &:active {
+        opacity: .7;
+    }
+
+    &.next {
+        right: 0;
+    }
+
+    &.previous {}
+
+    i {
+        color: $whitecolor;
+    }
+}

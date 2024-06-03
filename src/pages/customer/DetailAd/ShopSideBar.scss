@@ -1,0 +1,81 @@
+@import '../../../styles/variables';
+
+.shop-sidebar {
+    width      : 30%;
+    margin-left: 12px;
+    padding-top: 16px;
+    border-top : 1px solid $graycolor;
+
+
+    .shop-info {
+        display    : flex;
+        align-items: start;
+        gap        : 12px;
+
+        .shop-avatar {
+            img {
+                width        : 40px;
+                height       : 40px;
+                border-radius: 50%;
+            }
+        }
+
+        .shop-title {
+            font-weight: 600;
+        }
+
+        .shop-location {
+            color    : $mutedcolor;
+            font-size: 14px;
+
+            span {
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    .ad-favorite-count {
+        display    : flex;
+        align-items: center;
+        gap        : 4px;
+        color      : $maincolor;
+        margin-top : 8px;
+    }
+
+    .shop-follow-btn-wrapper {
+        padding-bottom: 12px;
+        border-bottom : 1px solid $graycolor;
+    }
+
+    .shop-contact {
+        display         : flex;
+        gap             : 12px;
+        align-items     : center;
+        padding         : 12px;
+        color           : $whitecolor;
+        margin-top      : 12px;
+        background-color: $greencolor;
+        width           : 100%;
+        border-radius   : 5px;
+    }
+
+    .shop-all-ad {
+        display         : flex;
+        align-items     : center;
+        gap             : 12px;
+        padding         : 12px;
+        border-radius   : 5px;
+        color           : $bluecolor;
+        background-color: $whitecolor;
+        border          : 1px solid $bluecolor;
+        margin-top      : 8px;
+        cursor          : pointer;
+        transition      : all .2s ease-in-out;
+
+        &:hover {
+            color           : $whitecolor;
+            background-color: $bluecolor;
+        }
+    }
+}

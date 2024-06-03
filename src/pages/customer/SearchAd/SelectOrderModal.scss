@@ -1,0 +1,13 @@
+@import '../../../styles/variables';
+
+.order-modal {
+    .custom-radio {
+        border : 1px solid $backgroundcolor-darker;
+        padding: 12px;
+
+        .checkmark {
+            right: 12px;
+        }
+    }
+
+}

@@ -1,0 +1,19 @@
+@import '../../../styles/variables';
+
+.form-floating>label {
+    color: $mutedcolor !important;
+}
+
+
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-control-plaintext~label,
+.form-floating>.form-select~label {
+    opacity    : 1 !important;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}

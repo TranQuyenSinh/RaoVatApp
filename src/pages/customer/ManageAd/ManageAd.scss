@@ -1,0 +1,101 @@
+@import '../../../styles/variables';
+
+.manage-ad-container {
+    width : 800px;
+    margin: 12px auto;
+
+    .user {
+        display    : flex;
+        align-items: center;
+        padding    : 20px 10px;
+
+        &__avatar {
+            width        : 60px;
+            border-radius: 50%;
+        }
+    }
+
+    .ad-container {
+        .ad-list {
+            .ad-item {
+                padding      : 12px 0;
+                border-bottom: 1px solid grey;
+
+                &:last-child {
+                    border: none;
+                }
+
+                .ad-item-info {
+                    display       : flex;
+                    flex-direction: column;
+                    gap           : 5px;
+                    flex          : 1;
+                }
+
+                &__image {
+                    width        : 150px;
+                    height       : 150px;
+                    border-radius: 5px;
+                }
+
+                &__title {
+                    font-weight: bold;
+                }
+
+                &__price {
+                    @include price-font();
+                }
+
+                &__location,
+                &__createdAt,
+                &__expireAt {
+                    color    : $mutedcolor;
+                    font-size: 13px !important;
+
+                    &--black {
+                        color    : $textcolor;
+                        font-size: 13px;
+                    }
+                }
+
+                .btn {
+                    box-shadow: none !important;
+                }
+
+                .reject-container {
+                    flex           : 1;
+                    display        : flex;
+                    flex-direction : column;
+                    justify-content: space-between;
+
+                    .reject-reason {
+                        padding         : 12px 16px 10px;
+                        background-color: $backgroundcolor;
+
+
+                        span {
+                            font-size: 13px;
+                            color    : $mutedcolor;
+                        }
+
+                        div {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .reject-action {
+                        display        : flex;
+                        align-items    : center;
+                        justify-content: end;
+                        gap            : 5px;
+
+                        button {}
+                    }
+                }
+
+            }
+        }
+
+
+    }
+}

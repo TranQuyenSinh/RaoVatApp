@@ -1,0 +1,79 @@
+@import '../../../styles/variables';
+
+.ad-detail-container {
+
+
+    .ad-detail-section {
+        padding       : 20px;
+        display       : flex;
+        flex-direction: row;
+        flex-wrap     : nowrap;
+
+        .ad-infor {
+            width: 70%;
+
+            .ad-title {
+                font-weight: bold;
+                margin     : 6px 0;
+            }
+
+            .ad-price {
+                display        : flex;
+                flex-direction : row;
+                align-items    : center;
+                justify-content: space-between;
+                color          : $redcolor;
+                margin         : 6px 0;
+
+                span {
+                    font-weight: bold;
+                }
+
+                .save-ad-btn {
+                    border-color: $redcolor;
+
+                    span {
+                        font-weight: normal;
+                    }
+                }
+
+            }
+
+            .ad-description {
+                white-space  : pre-line;
+                text-align   : justify;
+                font-size    : 15px;
+                margin-bottom: 8px;
+            }
+
+            .ad-param-container {
+                display      : flex;
+                flex-wrap    : wrap;
+                color        : $textgraycolor;
+                margin-bottom: 12px;
+
+                .ad-param-item {
+                    width      : 50%;
+                    display    : flex;
+                    align-items: center;
+                    gap        : 6px;
+                    padding    : 6px 0;
+                }
+            }
+
+
+            .ad-createdAt {
+                color      : $textgraycolor;
+                font-size  : 14px;
+                padding-top: 6px;
+                margin-top : 40px;
+                border-top : 1px solid $graycolor;
+            }
+
+
+        }
+
+
+    }
+
+}

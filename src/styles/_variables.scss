@@ -1,0 +1,44 @@
+@import "./mixin";
+
+$maincolor       : #ffba00;
+$maincolor-dark  : #FF8800;
+$maincolor-darker: #E56700;
+$redcolor        : #d0021b;
+$bluecolor       : #2A70DF;
+$lightgreencolor : #589f39;
+$greencolor      : #33a837;
+$graycolor       : #9b9b9b;
+
+
+$linkcolor  : #2A70DF;
+$mutedcolor : #9b9b9b;
+$whitecolor : #fff;
+
+$textmain              : #f80;
+$textcolor             : #222;
+$textgraycolor         : #777777;
+$backgroundcolor       : #f4f4f4;
+$backgroundcolor-darker: #e8e8e8;
+$backgroundcolor-red   : #ffe9c2;
+
+$backgrounddark: #272727;
+
+$background-gradient-login: to right,
+#F2C94C,
+#F2994A;
+$background-gradient-register: to right,
+#F2C94C,
+#F2994A;
+$background-gradient-login-admin: to top,
+#f8b500,
+#fceabb;
+
+
+$card-boxshadow: 0 1px 7px 0 rgba(0, 0, 0, .3);
+$div-boxshadow : 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+
+// size
+$navbar-height: 70px;
+$admin-sidebar-width: 250px;

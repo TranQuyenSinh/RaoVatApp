@@ -1,0 +1,6 @@
+@import '../../../styles/variables';
+
+.login-bg-admin {
+    background: -webkit-linear-gradient($background-gradient-login-admin);
+    background: linear-gradient($background-gradient-login-admin);
+}

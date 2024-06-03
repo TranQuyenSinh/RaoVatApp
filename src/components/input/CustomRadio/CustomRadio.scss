@@ -1,0 +1,53 @@
+@import '../../../styles/variables';
+
+.custom-radio {
+    display            : block;
+    position           : relative;
+    padding            : 12px 0;
+    cursor             : pointer;
+    -webkit-user-select: none;
+    -moz-user-select   : none;
+    -ms-user-select    : none;
+    user-select        : none;
+    border-bottom      : 1px solid #ccc;
+
+    input {
+        position: absolute;
+        opacity : 0;
+        cursor  : pointer;
+    }
+
+    .checkmark {
+        position        : absolute;
+        right           : 0;
+        height          : 25px;
+        width           : 25px;
+        background-color: #eee;
+        border-radius   : 50%;
+
+        &::after {
+            content : "";
+            position: absolute;
+            display : none;
+
+            top          : 9px;
+            left         : 9px;
+            width        : 8px;
+            height       : 8px;
+            border-radius: 50%;
+            background   : white;
+        }
+    }
+
+    &:hover input~.checkmark {
+        background-color: #ccc;
+    }
+
+    input:checked~.checkmark {
+        background-color: $maincolor;
+    }
+
+    input:checked~.checkmark:after {
+        display: block;
+    }
+}

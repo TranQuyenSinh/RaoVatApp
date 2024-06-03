@@ -1,0 +1,20 @@
+@import '../../../styles/variables.scss';
+
+.admin-navbar {
+    background-color: $backgrounddark;
+    color           : $whitecolor;
+
+    .dropdown-menu {
+        a {
+            cursor: pointer;
+        }
+    }
+}
+
+.sidebar-toggler {
+    cursor: pointer;
+
+    &:hover {
+        color: $maincolor;
+    }
+}

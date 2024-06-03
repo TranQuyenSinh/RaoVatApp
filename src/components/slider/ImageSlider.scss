@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+.ad-img-slider {
+    background-color: $backgroundcolor;
+
+    .slider-item {
+        img {
+            height    : 450px;
+            width     : 100%;
+            object-fit: contain;
+            margin    : 0 auto;
+            cursor    : zoom-in;
+        }
+    }
+
+    .slick-dots {
+        display: none !important;
+    }
+}

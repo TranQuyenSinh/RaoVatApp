@@ -1,0 +1,18 @@
+@import "../../../styles/variables";
+
+
+
+.custom-outline-radio {
+    label {
+        border-radius: 20px;
+        padding      : 4px 20px;
+        background   : $backgroundcolor;
+        border       : none !important;
+    }
+
+    input:checked~label,
+    label:hover {
+        background-color: $backgroundcolor-red !important;
+        color           : $redcolor !important;
+    }
+}

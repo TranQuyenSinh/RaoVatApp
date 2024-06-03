@@ -1,0 +1,20 @@
+@mixin flex-center() {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+@mixin flex-spacebetween() {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+@mixin price-font {
+    color      : $redcolor !important;
+    font-weight: bold !important;
+
+    &::after {
+        content: ' đ';
+    }
+}

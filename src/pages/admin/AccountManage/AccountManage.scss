@@ -1,0 +1,51 @@
+@import "../../../styles/variables";
+
+.account-manage-container {
+    .btn-add {}
+
+    .account-table {
+        thead {
+            background-color: $maincolor;
+            color           : $whitecolor;
+
+            td {
+                padding       : 12px;
+                border        : 1px solid $mutedcolor;
+                text-align    : center;
+                vertical-align: middle;
+            }
+        }
+
+        tr {
+
+            &:hover {
+                background-color: #f8f8f8;
+                transition      : 0.2s;
+            }
+
+            td {
+                max-width     : 100px;
+                height        : 100px;
+                vertical-align: middle;
+                text-align    : center;
+
+                .user-avatar {
+                    border-radius: 50%;
+                    margin       : 0 auto;
+                    border       : 1px solid $mutedcolor;
+                }
+            }
+        }
+
+
+    }
+}
+
+.modify-account-modal {
+    .img {
+        width        : 150px;
+        height       : 150px;
+        border-radius: 50%;
+        border       : 1px solid $graycolor;
+    }
+}

@@ -1,0 +1,24 @@
+.genres-container {
+
+    .slick-slide>div:first-child {
+        margin-bottom: 24px;
+    }
+
+
+
+    .genre-item {
+        cursor : pointer;
+        outline: none !important;
+
+        img {
+            width        : 84px;
+            height       : 84px;
+            margin       : 0 auto;
+            border-radius: 12px;
+        }
+
+        .genre-title {
+            text-align: center;
+        }
+    }
+}

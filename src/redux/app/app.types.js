@@ -1,0 +1,3 @@
+export const appTypes = {
+    CHANGE_CUSTOMER_LOCATION: 'CHANGE_CUSTOMER_LOCATION',
+}

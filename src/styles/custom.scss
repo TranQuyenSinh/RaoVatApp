@@ -1,0 +1,298 @@
+@import './base';
+@import './customBootstrap';
+@import './customClass';
+
+* {
+    font-family       : Helvetica, Arial, sans-serif;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none !important;
+    color          : unset;
+}
+
+p,
+span,
+div {
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding        : 0;
+    margin         : 0;
+}
+
+.text-main {
+    color: $textmain !important;
+}
+
+.text-main-darker {
+    color: $maincolor-darker !important;
+}
+
+.text-muted {
+    color: $mutedcolor !important;
+}
+
+.text-red {
+    color: $redcolor !important;
+}
+
+.bg-main {
+    background-color: $maincolor !important;
+}
+
+.bg-dark {
+    background-color: $backgrounddark !important;
+}
+
+.bg-main-darker {
+    background-color: $maincolor-darker !important;
+}
+
+.bg-red {
+    background-color: $redcolor !important;
+}
+
+.bg-blue {
+    background-color: $bluecolor !important;
+}
+
+.bg-green {
+    background-color: $greencolor !important;
+}
+
+.bg-gray {
+    background-color: $graycolor !important;
+}
+
+.btn {
+    box-shadow: none !important;
+}
+
+.btn-main {
+    color           : $whitecolor !important;
+    background-color: $maincolor-dark;
+
+    &:hover,
+    &:active,
+    &:focus {
+        border-color    : $maincolor-darker;
+        background-color: $maincolor-darker;
+    }
+}
+
+.btn-outline {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    gap            : 4px;
+    cursor         : pointer;
+    padding        : 4px 8px;
+    border-radius  : 30px;
+    border         : 1px solid black;
+
+    &.outline-main {
+        border-color: $maincolor !important;
+        color       : $maincolor !important;
+    }
+
+    &.outline-red {
+        border-color: $redcolor !important;
+        color       : $redcolor !important;
+    }
+
+    &.outline-blue {
+        border-color: $bluecolor !important;
+        color       : $bluecolor !important;
+    }
+}
+
+.btn-solid {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    gap             : 4px;
+    cursor          : pointer;
+    padding         : 4px 8px;
+    border-radius   : 30px;
+    border          : 1px solid $bluecolor;
+    background-color: $bluecolor;
+    color           : $whitecolor;
+
+    &.solid-main {
+        border-color    : $maincolor !important;
+        background-color: $maincolor !important;
+    }
+
+    &.solid-red {
+        border-color    : $redcolor !important;
+        background-color: $redcolor !important;
+    }
+
+    &.solid-blue {
+        border-color    : $bluecolor !important;
+        background-color: $bluecolor !important;
+    }
+
+    &.solid-green {
+        border-color    : $greencolor !important;
+        background-color: $greencolor !important;
+    }
+}
+
+.custom-menu {
+    position     : absolute;
+    left         : 16px;
+    top          : calc(100% - 5px);
+    background   : $whitecolor;
+    box-shadow   : $div-boxshadow;
+    border-radius: 3px;
+    padding      : 0;
+
+    li {
+        &.menu-title {
+            color           : $textgraycolor;
+            font-weight     : bold;
+            cursor          : default;
+            background-color: $backgroundcolor !important;
+            padding         : 6px 10px;
+
+            &:hover {
+                background-color: unset;
+            }
+        }
+
+        a {
+            color      : $textcolor;
+            display    : block;
+            padding    : 12px;
+            display    : flex;
+            align-items: center;
+            gap        : 10px;
+
+            .menu-icon {
+                color        : $whitecolor;
+                padding      : 5px;
+                font-size    : 12px;
+                border-radius: 50%;
+            }
+
+            &:hover {
+                background-color: $backgroundcolor-darker;
+            }
+
+        }
+    }
+
+}
+
+.btn-close {
+    box-shadow: none !important;
+    padding   : 10px !important;
+
+    &:hover {
+        border-radius   : 50% !important;
+        background-color: $backgroundcolor !important;
+    }
+}
+
+.invalid-feedback {
+    display: block;
+}
+
+// CUSTOM MODAL
+.modal-title {
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.modal-footer.fill {
+    padding: 0;
+
+    .btn {
+        width                  : 100%;
+        margin                 : 0;
+        border-top-right-radius: 0;
+        border-top-left-radius : 0;
+    }
+}
+
+// Slick slider custom
+.slick-list {
+    padding: 4px 0;
+
+    .slick-track {
+        margin-left : 0;
+        margin-right: 0;
+    }
+}
+
+.slick-carousel-arrow {
+    position           : absolute;
+    width              : 36px;
+    height             : 36px;
+    top                : calc(50% - 10px) !important;
+    cursor             : pointer;
+    border-radius      : 50%;
+    z-index            : 2;
+    background-size    : 100%;
+    background-position: center center;
+    transition         : all .2s ease-in-out;
+
+    &:before {
+        content: '' !important;
+    }
+
+    &:hover {
+        transform: translate(0, -50%) scale(1.2) !important;
+    }
+
+
+    &.prev-arrow {
+        left: 0px;
+    }
+
+    &.next-arrow {
+        right: 0px;
+    }
+
+    &.slick-disabled {
+        display: none !important;
+    }
+}
+
+// react-tabs custom
+.react-tabs {
+    &__tab-list {
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+    }
+
+    &__tab {
+        color         : $graycolor;
+        padding       : 3px 12px;
+        font-size     : 13px;
+        font-weight   : bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:focus::after {
+            background: none;
+        }
+
+        &--selected {
+            border       : none;
+            color        : $textcolor;
+            border-bottom: 5px solid $maincolor-dark;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import '../../../styles/variables';
+
+.address-select {
+    @include flex-spacebetween();
+    padding      : 12px;
+    cursor       : pointer;
+    border-radius: 5px;
+    border       : 1px solid $backgroundcolor-darker;
+
+
+    &:hover {
+        background-color: $backgroundcolor-darker;
+    }
+}
+
+.address-modal {
+    max-width: 600px;
+
+    .input-container {
+        border-width: 2px;
+
+        &:focus {
+            border-color: $maincolor;
+        }
+    }
+}

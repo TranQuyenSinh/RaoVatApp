@@ -1,0 +1,74 @@
+@import '../../../styles/variables';
+
+.searchbar-container {
+    width    : 100%;
+    max-width: 700px;
+
+    .searchbar {
+        display         : flex;
+        align-items     : center;
+        gap             : 5px;
+        padding         : 5px 5px 5px 10px;
+        background-color: $whitecolor;
+        border-radius   : 5px;
+        position        : relative;
+
+        input {
+            border : none;
+            outline: none;
+            flex   : 1;
+        }
+
+        &--btn {
+            width           : 48px;
+            height          : 28px;
+            background-color: $maincolor-dark;
+            margin-left     : 3px;
+            color           : $whitecolor;
+            display         : flex;
+            align-items     : center;
+            justify-content : center;
+            cursor          : pointer;
+            border-radius   : 3px;
+
+            &:hover {
+                opacity: 0.95;
+            }
+
+            i {}
+        }
+
+
+        .recent-search {
+            width           : 100%;
+            background-color: $whitecolor;
+            box-shadow      : $div-boxshadow;
+            display         : flex;
+            flex-direction  : column;
+            position        : absolute;
+            top             : calc(100% + 7px);
+            right           : 0;
+            left            : 0;
+
+            &__header {
+                background-color: $backgroundcolor;
+                padding         : 6px 8px;
+
+                i {
+                    margin-right: 12px;
+                }
+            }
+
+            &__item {
+                display   : block;
+                padding   : 6px 8px;
+                color     : $textcolor;
+                transition: 0.08s;
+
+                &:hover {
+                    background-color: $backgroundcolor-darker;
+                }
+            }
+        }
+    }
+}

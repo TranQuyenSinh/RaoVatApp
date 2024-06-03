@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+
+.location-select-container {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    padding        : 12px;
+    cursor         : pointer;
+    border-radius  : 5px;
+
+    &:hover {
+        background-color: $backgroundcolor-darker;
+    }
+
+}

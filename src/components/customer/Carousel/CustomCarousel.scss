@@ -1,0 +1,85 @@
+@import '../../../styles/variables';
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
+.custom-carousel {
+    position: relative;
+
+    .carousel-images {
+        position       : relative;
+        border-radius  : 10px;
+        height         : 300px;
+        margin         : auto;
+        overflow       : hidden;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+
+        a {
+            display: block;
+            width  : 100%;
+            height : 100%;
+
+            img {
+                width        : 100%;
+                height       : 100%;
+                border-radius: 8px;
+                cursor       : pointer;
+            }
+        }
+
+    }
+
+    .slide_direction {
+        display        : flex;
+        justify-content: space-between;
+
+        .left,
+        .right {
+            background-color: rgba(0, 0, 0, 0.448), 0, 0.459;
+            color           : #fff;
+            padding         : 10px 8px 8px 13px;
+            margin          : 0 20px;
+            border-radius   : 50%;
+            position        : absolute;
+            top             : 0;
+            bottom          : 0;
+            margin          : auto 10px;
+            height          : 10px;
+            cursor          : pointer;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+        }
+    }
+
+
+
+    .carousel-indicator {
+        display        : flex;
+        justify-content: center;
+        gap            : 20px;
+        position       : absolute;
+        bottom         : 20px;
+        left           : 0;
+        right          : 0;
+
+        .dot {
+            cursor          : pointer;
+            background-color: $graycolor;
+            width           : 26px;
+            height          : 5px;
+
+            &.active {
+                background-color: $maincolor;
+            }
+        }
+    }
+
+
+
+}

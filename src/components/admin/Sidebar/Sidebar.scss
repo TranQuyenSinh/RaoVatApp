@@ -1,0 +1,44 @@
+@import '../../../styles/variables.scss';
+
+.sidebar {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    bottom          : 0;
+    width           : $admin-sidebar-width;
+    height          : 100vh;
+    overflow-y      : auto;
+    transition      : 0.5s;
+    z-index         : 999;
+    background-color: $backgrounddark;
+}
+
+.sidebar .navbar .navbar-nav .nav-link {
+    padding      : 7px 20px;
+    color        : $whitecolor;
+    font-weight  : 500;
+    border-radius: 0 30px 30px 0;
+    border-left  : 4px solid $backgrounddark;
+    outline      : none;
+}
+
+.sidebar .navbar .navbar-nav .nav-link:hover,
+.sidebar .navbar .navbar-nav .nav-link.active {
+    background : #525252;
+    color      : $maincolor;
+    border-left: 4px solid $maincolor;
+}
+
+.sidebar .navbar .navbar-nav .nav-link i {
+    width          : 40px;
+    height         : 40px;
+    display        : inline-flex;
+    align-items    : center;
+    justify-content: center;
+    border-radius  : 40px;
+}
+
+.sidebar .navbar .navbar-nav .nav-link:hover i,
+.sidebar .navbar .navbar-nav .nav-link.active i {
+    background: $textgraycolor;
+}
